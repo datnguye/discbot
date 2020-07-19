@@ -1,6 +1,9 @@
 # discbot
 Discord bot template in pythonic
 
+![Sample](/resources/sample.png)
+Format: ![Alt Text](url)
+
 
 #### Development or Installation:
 1. Create discord bot user via [Developer Portal](https://discordpy.readthedocs.io/en/latest/discord.html)
