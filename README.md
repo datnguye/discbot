@@ -1,8 +1,6 @@
 # discbot
 Discord bot template in pythonic
 
-#### Commands
-Typing -help in discord to see available commands
 
 #### Development or Installation:
 1. Create discord bot user via [Developer Portal](https://discordpy.readthedocs.io/en/latest/discord.html)
@@ -47,3 +45,6 @@ Python 3.7.5
 from discbot import bot
 bot.start()
 ```
+
+#### Available Commands
+Typing -help in discord to see available commands
