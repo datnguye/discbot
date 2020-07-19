@@ -1,4 +1,2 @@
-from discbot import client,bot
-
-# client.start()
+from discbot import bot
 bot.start()
