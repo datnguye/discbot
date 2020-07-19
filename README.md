@@ -39,12 +39,12 @@ python run.py
 Python 3.7.5
 ```
 
-## USAGE - run.py
+### USAGE - run.py
 
 ```
 from discbot import bot
 bot.start()
 ```
 
-#### Available Commands
+### Available Commands
 Typing -help in discord to see available commands
