@@ -1,14 +1,19 @@
 # discbot
-Discord bot template
+Discord bot template in pythonic
+
+## Commands
+Typing -help in discord to see available commands
 
 #### Development or Installation:
-Clone source code:
+1. Create discord bot user via [Developer Portal](https://discordpy.readthedocs.io/en/latest/discord.html)
+
+2. Clone source code:
 ```
 git clone https://github.com/datnguye/discbot.git
 cd discbot
 ```
 
-Create enviroment:
+3. Create enviroment:
 ```
 python -m venv env
 .\env\Scripts\activate
@@ -18,14 +23,14 @@ python -m pip install -r requirements.txt
 
 ```
 
-Create dotenv file (sample level as bot.py): ~/discbot/.env
+4. Create dotenv file (sample level as bot.py): ~/discbot/.env
 ```
 DISCORD_TOKEN=your_token
 DISCORD_GUILD=your_discord_server_name
 ERROR_PATH=/path/to/your_file.log
 ```
 
-#### Run test cases:
+5. Run it!
 ```
 .\env\Scripts\activate
 python run.py
@@ -42,6 +47,3 @@ Python 3.7.5
 from discbot import bot
 bot.start()
 ```
-
-## COMMAND LISTING
-Typing -help in discord to see available commands
