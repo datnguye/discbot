@@ -1,4 +1,5 @@
 # discbot
+Discord bot template
 
 #### Development or Installation:
 Clone source code:
@@ -17,7 +18,7 @@ python -m pip install -r requirements.txt
 
 ```
 
-Create ~/discbot/.env file:
+Create dotenv file (sample level as bot.py): ~/discbot/.env
 ```
 DISCORD_TOKEN=your_token
 DISCORD_GUILD=your_discord_server_name
@@ -36,14 +37,7 @@ Python 3.7.5
 ```
 
 ## USAGE - run.py
-Use this as client:
-```
-from discbot import client
-client.start()
-```
 
-
-Use this as commands:
 ```
 from discbot import bot
 bot.start()
