@@ -1,7 +1,7 @@
 # discbot
 Discord bot template in pythonic
 
-## Commands
+#### Commands
 Typing -help in discord to see available commands
 
 #### Development or Installation:
