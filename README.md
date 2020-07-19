@@ -1,9 +1,10 @@
 # discbot
 
-
 Installation:
 ```
-TBU
+git clone https://github.com/datnguye/discbot.git
+cd discbot
+python run.py
 ```
 
 #### Development Eviroment:
@@ -23,15 +24,17 @@ python -m pip install -r requirements.txt
 
 ```
 
-Create .env file:
+Create ~/discbot/.env file:
 ```
-TBU
+DISCORD_TOKEN=your_token
+DISCORD_GUILD=your_discord_server_name
+ERROR_PATH=/path/to/your_file.log
 ```
 
 #### Run test cases:
 ```
 .\env\Scripts\activate
-python test.py
+python run.py
 ```
 
 ### Version used
@@ -39,6 +42,16 @@ python test.py
 Python 3.7.5
 ```
 
-## USAGE
+## USAGE - run.py
+Use this as client:
+```
+from discbot import client
+client.start()
+```
 
-TBU
+
+Use this as commands:
+```
+from discbot import bot
+bot.start()
+```
