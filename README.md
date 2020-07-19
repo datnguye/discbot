@@ -1,13 +1,6 @@
 # discbot
 
-Installation:
-```
-git clone https://github.com/datnguye/discbot.git
-cd discbot
-python run.py
-```
-
-#### Development Eviroment:
+#### Development or Installation:
 Clone source code:
 ```
 git clone https://github.com/datnguye/discbot.git
