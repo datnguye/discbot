@@ -58,7 +58,7 @@ async def roll(ctx, number_of_dice=3, number_of_sides=100):
     ]
     await ctx.send(','.join(dice))
 
-@bot.command('quit')
+@bot.command(name='quit', help='Quit and log out the bot. Affected by owner request only')
 @commands.is_owner()
 async def shutdown(ctx):
     await ctx.send('OK! Logged out.')

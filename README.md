@@ -42,3 +42,6 @@ Python 3.7.5
 from discbot import bot
 bot.start()
 ```
+
+## COMMAND LISTING
+Typing -help in discord to see available commands
