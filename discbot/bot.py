@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='-')
 @bot.event
 async def on_ready():
     guild = discord.utils.find(lambda g: g.name == GUILD, bot.guilds)
-    print(f'{bot.user} is connected to the following guild: {guild.name}(id: {guild.id})')
+    print(f'{bot.user} is connected to the following guild: {guild.name} (id: {guild.id})')
     
     members = '\n - '.join([member.name for member in guild.members])
     print(f'Guild Members:\n - {members}')
@@ -52,11 +52,17 @@ async def nine_nine(ctx):
 
 @bot.command(name='roll', help='Simulates rolling dice.')
 async def roll(ctx, number_of_dice=3, number_of_sides=100):
+    #print(ctx.author.id)
     dice = [
         str(random.choice(range(1, number_of_sides + 1)))
         for _ in range(number_of_dice)
     ]
     await ctx.send(','.join(dice))
+
+@bot.command(name='check', help='MOD: Check rights')
+@commands.has_any_role('admin')
+async def check(ctx):
+    await ctx.send('You are cool indeed')
 
 @bot.command(name='quit', help='Quit and log out the bot. Affected by owner request only')
 @commands.is_owner()
